@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto; /* Habilita rolagem vertical */
+  background-color: #c5a0d6; /* Novo tom de roxo claro */
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+}
+
+.background-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinha os itens no topo */
+  min-height: 100vh; /* Garante que o fundo ocupe a altura mínima da tela */
+  width: 100vw;
+  background: linear-gradient(to bottom, #c5a0d6, #c5a0d6), url('/astronaut.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px; /* Adiciona um pequeno espaço ao redor do conteúdo */
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.astronaut-img {
+  width: 300px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.question-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.alternatives-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.alternative-button {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #6B4E98;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+}
+
+.alternative-button.selected {
+  background-color: #9B59B6;
+}
+
+.alternative-button:hover {
+  background-color: #9B59B6;
+}
+
+.submit-button {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #6B4E98;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #9B59B6;
+}
+
+.score-container {
+  margin-top: 30px;
+}
+
+.score {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
